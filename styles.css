@@ -1,0 +1,176 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+/* Style form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea, button {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* PDF Compressor Section Styles */
+#pdf-compressor {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdf-compressor h2 {
+    color: #333;
+}
+
+#pdf-compressor-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#pdf_input_container {
+    margin-top: 10px;
+}
+
+#selected_pdf_container {
+    margin-top: 10px;
+}
+
+#selected_pdf_list {
+    list-style: none;
+    font-size: x-small;
+}
+
+#range_container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#compress_input {
+    margin-right: 10px;
+}
+
+#compress_input_output {
+    font-size: small;
+}
+
+#compress_pdf_container {
+    margin-top: 10px;
+}
+
+#compress_pdf {
+    border: 1px solid rgba(255, 99, 71, 0.5);
+    background: rgba(255, 99, 71, 0.2);
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#compress_pdf:hover {
+    background-color: #555;
+}
+
+#selected_pdf_list .handle {
+    cursor: grab;
+    content: url("res/ic_fluent_drag_24_regular.svg");
+    vertical-align: middle;
+}
+
+.ghost-class {
+    background-color: rgba(255, 99, 71, 0.5);
+    border-radius: 5px;
+    width: max-content;
+}
+
+@keyframes loading {
+    0% {
+        border: 2px solid #4285f4;
+        color: #4285f4;
+        box-shadow: 0px 1px 10px 1px rgba(66, 133, 244, 0.5);
+    }
+    33% {
+        border: 2px solid #db4437;
+        color: #db4437;
+        box-shadow: 0px 1px 10px 1px rgba(219, 68, 55, 0.5);
+    }
+    66% {
+        border: 2px solid #f4b400;
+        color: #f4b400;
+        box-shadow: 0px 1px 10px 1px rgba(244, 160, 0, 0.5);
+    }
+    100% {
+        border: 2px solid #0f9d58;
+        color: #0f9d58;
+        box-shadow: 0px 1px 10px 1px rgba(15, 157, 88, 0.5);
+    }
+}
+
+button {
+    border-radius: 15px;
+    font-family: Consolas, SFMono-Regular, Liberation Mono, Menlo, monospace;
+}
+
+button:disabled {
+    color: black;
+}
+
+button:hover {
+    box-shadow: 0px 1px 7px 1px rgba(255, 99, 71, 0.25);
+    transform: translateY(-0.75px);
+}
